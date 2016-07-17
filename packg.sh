@@ -160,8 +160,8 @@ echo "-------开始蒲公英上传--------"
 
 if [[ $local != "YES" ]];then
 #通过api上传到蒲公英当中
-pgyerUKey="9d3f71205d4bba59cc3ad76795cb5ccb"  # 这里替换蒲公英ukey
-pgyerApiKey="9e66a5551e1547a23d19b7636958c76f" # 这里替换蒲公英apiKey
+pgyerUKey="9d3f71205d4bbxxxxxx6795cb5ccb"  # 这里替换蒲公英ukey
+pgyerApiKey="9e66a5551e1xxxxxxxb7636958c76f" # 这里替换蒲公英apiKey
 
 RESULT=$(curl -F "file=@$ipaPath" -F "uKey=$pgyerUKey" -F "_api_key=$pgyerApiKey" -F "publishRange=2" http://www.pgyer.com/apiv1/app/upload)
 
